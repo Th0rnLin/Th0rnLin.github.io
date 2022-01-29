@@ -46,8 +46,8 @@
     background-color: rgb(200, 200, 200);
 }
 .terminal-red{
-    margin-top: 7.5px;
-    margin-left: 7.5px;
+    margin-top: 8px;
+    margin-left: 8px;
     width: 15px;
     height: 15px;
     z-index: 1;
@@ -56,8 +56,8 @@
     float: left;
 }
 .terminal-yellow{
-    margin-top: 7.5px;
-    margin-left: 7.5px;
+    margin-top: 8px;
+    margin-left: 8px;
     width: 15px;
     height: 15px;
     z-index: 1;
@@ -66,8 +66,8 @@
     float: left;
 }
 .terminal-green{
-    margin-top: 7.5px;
-    margin-left: 7.5px;
+    margin-top: 8px;
+    margin-left: 8px;
     width: 15px;
     height: 15px;
     z-index: 1;
