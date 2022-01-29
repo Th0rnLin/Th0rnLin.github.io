@@ -1,0 +1,53 @@
+/*--Contact--*/
+.Contact{
+    padding-left: 15vw;
+    padding-right: 15vw;
+    font-size: 50px;
+    color: white;
+    background-color: black;
+    break-inside: avoid;
+}
+
+/*--div--*/
+.Contact-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*--div-left--*/
+.Contact-div-left{
+    font-family: 'Comforter', cursive;
+    padding-top: 30vh;
+    padding-bottom: 20vh;
+    max-width: 100vw;
+    height: 40vh;
+}
+
+/*--div-right--*/
+.Contact-div-right{
+    font-family: 'Dongle', sans-serif;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    max-width: 100vw;
+    height: 50vh;
+}
+
+/*--a1--*/
+.Contact-a1{
+    color: rgba(100, 100, 100, 0.9)
+}
+
+/*--a2--*/
+.Contact-a2{
+    color: white;
+    text-decoration: none;
+}
+.Contact-a2:hover{
+    color: orange;
+}
+
+.Contact-div2{
+    font-family: 'Dongle', sans-serif;
+    height: 10vh;
+    font-size: 24px;
+}

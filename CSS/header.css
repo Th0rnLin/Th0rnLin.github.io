@@ -1,0 +1,34 @@
+/*--header--*/
+.header{
+    /*position: absolute;*/
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    transition-duration: 1s;
+}
+.header.active {
+    background: black;
+}
+
+/*--ul--*/
+.header ul{
+    list-style: none;
+}
+
+/*--li--*/
+.header li {
+    display: inline-block;
+}
+
+/*--a--*/
+.header a{
+    margin-right: 15px;
+    color: rgba(255, 255, 255, 0.750);
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Dongle', sans-serif;
+}
+.header a:hover{
+    color: white;
+}
