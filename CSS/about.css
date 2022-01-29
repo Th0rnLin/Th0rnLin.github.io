@@ -26,3 +26,59 @@
     color: black;
     font-family: 'Dongle', sans-serif;
 }
+
+.terminal{
+    padding-left: 15px;
+    padding-top: 1px;
+    font-family: monospace;
+    border-radius: 0 0 10px 10px;
+    max-width: 100%;
+    height: fit-content;
+    background-color: rgb(55, 55, 55);
+    color: white;
+    font-size: 18px;
+}
+.terminal-bar{
+    display: flex;
+    border-radius: 10px 10px 0 0;
+    max-width: 100%;
+    height: 30px;
+    background-color: rgb(200, 200, 200);
+}
+.terminal-red{
+    margin-top: 7.5px;
+    margin-left: 7.5px;
+    width: 15px;
+    height: 15px;
+    z-index: 1;
+    background-color: rgb(230, 100, 100);
+    border-radius: 50%;
+    float: left;
+}
+.terminal-yellow{
+    margin-top: 7.5px;
+    margin-left: 7.5px;
+    width: 15px;
+    height: 15px;
+    z-index: 1;
+    background-color: rgb(240, 191, 80);
+    border-radius: 50%;
+    float: left;
+}
+.terminal-green{
+    margin-top: 7.5px;
+    margin-left: 7.5px;
+    width: 15px;
+    height: 15px;
+    z-index: 1;
+    background-color: rgb(100, 200, 90);
+    border-radius: 50%;
+    float: left;
+}
+.terminal a{
+    text-decoration: none;
+    color: #5290C2;
+}
+.terminal a:hover{
+    text-decoration: underline;
+}
