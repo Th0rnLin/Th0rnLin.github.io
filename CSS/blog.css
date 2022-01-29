@@ -4,12 +4,13 @@
     padding-left: 15vw;
     padding-right: 15vw;
     padding-bottom: 20vh;
+    background-color: rgb(100, 150, 150);
 }
 
 /*--h1--*/
 .Blog h1{
     font-size: 45px;
-    color: black;
+    color: white;
     font-family: 'Comforter', cursive;
 }
 
@@ -78,13 +79,17 @@
     margin-top: 10vh;
     padding-top: 10px;
     padding-bottom: 10px;
-    border: 5px solid rgba(100, 200, 250, 0.5);
+    border: 5px solid rgb(190, 190, 190);
     text-align: center;
 }
 .Blog-div5 a{
-    color: rgba(100, 200, 250, 1);
+    color: rgb(190, 190, 190);
     font-size: 36px;
     font-family: 'Dongle', sans-serif;
     text-decoration:none;
     list-style: none;
+}
+
+.Blog-div5:hover{
+    scale: 1.03;
 }

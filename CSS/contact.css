@@ -6,6 +6,7 @@
     color: white;
     background-color: black;
     break-inside: avoid;
+    max-height:max-content
 }
 
 /*--div--*/

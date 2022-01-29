@@ -8,7 +8,7 @@
     transition-duration: 1s;
 }
 .header.active {
-    background: black;
+    background: rgb(220, 220, 220);
 }
 
 /*--ul--*/
@@ -31,4 +31,10 @@
 }
 .header a:hover{
     color: white;
+}
+.header.active a{
+    color: rgb(100, 100, 100);
+}
+.header.active a:hover{
+    color: rgba(100, 100, 100, 0.750);
 }
