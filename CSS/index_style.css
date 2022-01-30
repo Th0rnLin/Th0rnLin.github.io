@@ -9,7 +9,7 @@ html{
 /*------------------------------------------------------------*/
 /*------------body----------*/
 body{
-    background-color: rgb(220, 220, 220);
+    background-color: rgba(50, 50, 50, 1);
     margin:0px;
 }
 
@@ -68,6 +68,7 @@ body{
     background-size: cover;
     background-repeat:no-repeat;
     background-attachment: fixed;
+    overflow: hidden;
 }
 
 /*--h1--*/
@@ -291,7 +292,8 @@ img{
     color: white;
     background-color: rgba(50, 50, 50, 1);
     break-inside: avoid;
-    max-height:max-content
+    max-height:max-content;
+    overflow: hidden;
 }
 
 /*--div--*/
