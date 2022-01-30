@@ -4,7 +4,7 @@
     padding-right: 15vw;
     font-size: 50px;
     color: white;
-    background-color: black;
+    background-color: rgba(50, 50, 50, 1);
     break-inside: avoid;
     max-height:max-content
 }
@@ -35,7 +35,7 @@
 
 /*--a1--*/
 .Contact-a1{
-    color: rgba(100, 100, 100, 0.9)
+    color: rgba(200, 200, 200, 1)
 }
 
 /*--a2--*/
