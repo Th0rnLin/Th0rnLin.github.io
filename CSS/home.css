@@ -31,7 +31,7 @@
 }
 .Home li::after{
     content: '/';
-    color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
 }
 .Home :last-child::after {
     display: none;
