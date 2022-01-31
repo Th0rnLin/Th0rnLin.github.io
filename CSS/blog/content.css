@@ -1,0 +1,17 @@
+/*--Content--*/
+.Content{
+    
+}
+
+/*--div--*/
+.Content .Content-div{
+    text-align: center;
+}
+.Content .Content-div:hover{
+    scale: 1.05;
+}
+.Content .Content-div a{
+    color: black;
+    font-size: 50px;
+    font-family: 'Dongle', sans-serif;
+}

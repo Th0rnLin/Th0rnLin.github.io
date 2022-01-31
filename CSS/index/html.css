@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Dongle:wght@700&family=Noto+Sans+TC&family=Roboto:wght@100&display=swap');
+
+/*--html--*/
+html{
+    scroll-behavior: smooth;
+    scroll-margin-top: -75px;
+}
+/*--body--*/
+body{
+    background-color: rgba(50, 50, 50, 1);
+    margin:0px;
+}
