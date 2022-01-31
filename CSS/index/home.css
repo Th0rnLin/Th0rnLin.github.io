@@ -1,3 +1,24 @@
+/*--phone--*/
+@media only screen and (min-width: 0px) and (max-width: 320px) {
+    .class {
+        background: #666; 
+    } 
+}
+
+/*--tablet--*/
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    .class {
+        background: #666; 
+    } 
+}
+
+/*--desktop--*/
+@media only screen and (min-width: 769px){
+    .class {
+        background: #666; 
+    } 
+}
+
 /*--Home--*/
 .Home{
     padding-top: 30vh;

@@ -1,3 +1,21 @@
+/*--phone--*/
+@media only screen and (min-width: 0px) and (max-width: 320px) {
+    .header a{
+        font-size: 15px;
+    }
+    
+}
+
+/*--tablet--*/
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+
+}
+
+/*--desktop--*/
+@media only screen and (min-width: 769px){
+
+}
+
 /*--header--*/
 .header{
     z-index: 100;
@@ -25,7 +43,6 @@
     margin-right: 15px;
     color: rgba(255, 255, 255, 0.750);
     text-decoration: none;
-    font-size: 40px;
     font-family: 'Dongle', sans-serif;
 }
 .header a:hover{
