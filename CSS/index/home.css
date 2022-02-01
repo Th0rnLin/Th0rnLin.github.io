@@ -1,22 +1,37 @@
 /*--phone--*/
 @media only screen and (min-width: 0px) and (max-width: 320px) {
-    .class {
-        background: #666; 
-    } 
+    .Home h1{
+        font-size: 25px;
+        padding-left: 50px;
+    }
+    .Home a{
+        font-size: 10px;
+        margin: 5px;    
+    }
 }
 
 /*--tablet--*/
 @media only screen and (min-width: 321px) and (max-width: 768px) {
-    .class {
-        background: #666; 
-    } 
+    .Home h1{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .Home a{
+        font-size: 20px;
+        margin: 10px;    
+    }
 }
 
 /*--desktop--*/
 @media only screen and (min-width: 769px){
-    .class {
-        background: #666; 
-    } 
+    .Home h1{
+        font-size: 50px;
+        padding-left: 50px;
+    }
+    .Home a{
+        font-size: 30px;
+        margin: 20px;    
+    }
 }
 
 /*--Home--*/
@@ -31,14 +46,11 @@
     background-size: cover;
     background-repeat:no-repeat;
     background-attachment: fixed;
-    overflow: hidden;
 }
 
 /*--h1--*/
 .Home h1{
-    font-size: 50px;
     color: white;
-    padding-left: 50px;
     font-family: 'Comforter', cursive;
 }
 
@@ -63,8 +75,6 @@
 .Home a{
     text-decoration: none;
     color: white;
-    font-size: 30px;
-    margin: 20px;
     font-family: 'Dongle', sans-serif;
 }
 .Home a:hover{
