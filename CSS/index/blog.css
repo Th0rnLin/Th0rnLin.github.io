@@ -12,6 +12,8 @@
     font-size: 45px;
     color: white;
     font-family: 'Comforter', cursive;
+    overflow: scroll;
+    white-space:nowrap;
 }
 
 /*--div--*/

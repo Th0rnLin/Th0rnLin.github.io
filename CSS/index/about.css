@@ -13,6 +13,8 @@
     font-size: 45px;
     color: white;
     font-family: 'Comforter', cursive;
+    overflow: scroll;
+    white-space:nowrap;
 }
 
 /*--terminal--*/
@@ -26,6 +28,8 @@
     background-color: rgb(55, 55, 55);
     color: white;
     font-size: 18px;
+    overflow: scroll;
+    white-space:nowrap;
 }
 .terminal-bar{
     display: flex;
