@@ -1,6 +1,7 @@
 /*--Content--*/
 .Content{
-    
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 /*--div--*/
@@ -8,10 +9,33 @@
     text-align: center;
 }
 .Content .Content-div:hover{
-    scale: 1.05;
+    transform: scale(1.05);
 }
 .Content .Content-div a{
     color: black;
     font-size: 50px;
     font-family: 'Dongle', sans-serif;
+}
+
+/*--div2--*/
+.Content-div2{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.Content-div2 h2{
+    font-size: 25px;
+}
+.Content-div2 .img1{ /*height>width*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 300px;
+}
+.Content-div2 .img2{ /*width>height*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
 }
