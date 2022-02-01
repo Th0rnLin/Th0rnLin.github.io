@@ -1,3 +1,24 @@
+/*--phone--*/
+@media only screen and (min-width: 0px) and (max-width: 320px) {
+    .Blog-div{
+        column-count: 1;
+    }
+}
+
+/*--tablet--*/
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    .Blog-div{
+        column-count: 1;
+    }
+}
+
+/*--desktop--*/
+@media only screen and (min-width: 769px){
+    .Blog-div{
+        column-count: 3;
+    }
+}
+
 /*--Blog--*/
 .Blog{
     padding-top: 10vh;
@@ -18,7 +39,6 @@
 
 /*--div--*/
 .Blog-div{
-    column-count: 3;
     column-gap: 0;
     margin: 0px auto;
     width: 100%;
@@ -49,31 +69,25 @@
 }
 .Blog-div2:hover img{
     transition-duration: 1s;
-    overflow: hidden;
-    scale: 1.2;
-}
-
-/*--div4--*/
-.Blog-div4{
-    display: none;
-}
-.Blog-div2:hover .Blog-div4{
-    display: block;
+    transform: scale(1.2);
 }
 
 /*--h2--*/
 .Blog-div4 h2{
+    max-width: 80%;
     font-family: monospace;
     z-index: 1;
     position: absolute;
-    bottom: 24px;
-    left: 12px;
+    bottom: 10%;
+    left: 5%;
     font-size: 14px;
     float: left;
     border-radius: 40px;
     padding: 5px 15px 5px 15px;
     color: white;
     background-color: rgba(100, 200, 250, 0.3);
+    overflow: scroll;
+    white-space:nowrap;
 }
 
 /*--div-5--*/
@@ -92,5 +106,5 @@
     list-style: none;
 }
 .Blog-div5:hover{
-    scale: 1.03;
+    transform: scale(1.03);
 }
