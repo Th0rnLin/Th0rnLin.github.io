@@ -25,13 +25,10 @@
     padding-left: 15vw;
     padding-right: 15vw;
     padding-bottom: 10vh;
-    height: 70vh;
     max-width: 100vw;
+    height: 70vh;
     color: white;
     background-color: rgba(50, 50, 50, 1);
-    break-inside: avoid;
-    max-height: auto;
-    overflow: hidden;
 }
 
 .Contact h1{
