@@ -33,8 +33,6 @@
     font-size: 45px;
     color: white;
     font-family: 'Comforter', cursive;
-    overflow: scroll;
-    white-space:nowrap;
 }
 
 /*--div--*/
@@ -86,8 +84,7 @@
     padding: 5px 15px 5px 15px;
     color: white;
     background-color: rgba(100, 200, 250, 0.3);
-    overflow: scroll;
-    white-space:nowrap;
+    overflow: hidden;
 }
 
 /*--div-5--*/
