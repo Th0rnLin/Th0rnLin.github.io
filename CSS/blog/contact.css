@@ -1,54 +1,27 @@
-/*--phone--*/
-@media only screen and (min-width: 0px) and (max-width: 320px) {
-    .Contact{
-        font-size: 20px;
-    }
-}
-
-/*--tablet--*/
-@media only screen and (min-width: 321px) and (max-width: 768px) {
-    .Contact{
-        font-size: 30px;
-    }
-}
-
-/*--desktop--*/
-@media only screen and (min-width: 769px){
-    .Contact{
-        font-size: 40px;
-    }
-}
-
 /*--Contact--*/
 .Contact{
-    padding-top: 10vh;
+    padding-top: 5vh;
     padding-left: 15vw;
     padding-right: 15vw;
     padding-bottom: 10vh;
     max-width: 100vw;
-    height: 80vh;
+    height: 85vh;
     color: white;
     background-color: rgba(50, 50, 50, 1);
 }
-
 .Contact h1{
-    font-size: 45px;
+    font-size: 50px;
     font-family: 'Comforter', cursive;
 }
 
-/*--div-right--*/
+/*--div--*/
 .Contact-div{
-    padding: 0;
-    margin: 0;
+    font-size: 5vh;
     font-family: 'Dongle', sans-serif;
 }
-
-/*--a1--*/
 .Contact-div .a1{
     color: rgba(200, 200, 200, 1)
 }
-
-/*--a2--*/
 .Contact-div .a2{
     color: white;
     text-decoration: none;
@@ -57,9 +30,9 @@
     color: orange;
 }
 
+/*--div2--*/
 .Contact-div2{
     text-align: center;
     font-family: 'Dongle', sans-serif;
-    height: 10vh;
-    font-size: 24px;
+    font-size: 5vh;
 }
