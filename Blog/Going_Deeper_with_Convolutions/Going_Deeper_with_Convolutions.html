@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="../../CSS/blog/title.css">
         <link rel="stylesheet" href="../../CSS/blog/content.css">
         <link rel="stylesheet" href="../../CSS/blog/contact.css">
+        <link rel="stylesheet" href="../../CSS/blog/lightbox.css">
+        <link rel="stylesheet" href="../../CSS/blog/tooltip.css">
     </head>
     <!--body-->
     <body>
@@ -26,18 +28,93 @@
         </section>
         <!--content-->
         <section class="Content">
-            <div class="Content-div"><a href="https://arxiv.org/pdf/1409.4842.pdf">Going Deeper with Convolutions</a></div>
-            <!--PAPER-->
-            <div class="Content-div2">
+            <!--title-->
+            <div class="title">
+                <a href="https://arxiv.org/pdf/1409.4842.pdf">
+                    Going Deeper with Convolutions
+                </a>
+            </div>
+
+            <!--Abstract-->
+            <div>
                 <h2>Abstract</h2><hr>
                 <a>
-                    Google提出了Inception架構，為了圖片的分類和檢測，並參加ILSVRC14，
-                    他改善神經網路對電腦運算，增加了網路的深度及寬度，並且保持budget constraint，
-                    優化方式基於赫布理論和the intuition of multi-scale processing，
-                    特別的例子GoogLeNet為22層的網路架構，用來參加ILSVRC14。
+                    Google提出了
+                </a>
+                <div class="link">
+                    <a href="https://medium.com/學以廣才/googlenet-inception的演進-f8a5641e99c3">
+                        Inception
+                    </a>
+                </div>
+                <a>
+                    架構，為了圖片的分類和檢測，並參加
+                </a>
+                <div class="tooltip link">
+                    <a href="https://chtseng.wordpress.com/2017/11/20/ilsvrc-歷屆的深度學習模型/">
+                        ILSVRC14
+                    </a>
+                    <span class="tooltiptext">
+                        一個有關電腦視覺的比賽，其中GoogLeNet在object detection與classification中，獲得好成績。
+                    </span>
+                </div>
+                <a>
+                    ，他
+                </a>
+                <div class="tooltip">
+                    <a>
+                        改善神經網路對電腦運算
+                    </a>
+                    <span class="tooltiptext">
+                        利用1x1卷積，讓計算參數減少。
+                    </span>
+                </div>
+                <a>
+                    ，增加了網路的深度及寬度，並且保持
+                </a>
+                <div class="tooltip link">
+                    <a href="https://blog.csdn.net/qq_41185868/article/details/86382017">
+                        budget constraint
+                    </a>
+                    <span class="tooltiptext">
+                        wiki → 在給定的收入和固定商品價格下，消費者能得到Ｘ商品和Ｙ商品的組合。<br><br>
+                        我認為在此指這個神經網路，在一樣的資源情況下，能有更好的結果。
+                    </span>
+                </div>
+                <a>
+                    ，優化方式基於
+                </a>
+                <div class="tooltip link">
+                    <a href="https://blog.csdn.net/tonglin12138/article/details/106415568">
+                        赫布理論
+                    </a>
+                    <span class="tooltiptext">
+                        wiki → 突觸前神經元向突觸後神經元進行重複刺激，能加速突觸傳遞的效能。<br><br>
+                        在人工神經網路中，加速突觸傳遞的效能指的是，神經元訓練過程中的權重更新。
+                    </span>
+                </div>
+                <a>
+                    和
+                </a>
+                <div class="tooltip link">
+                    <a href="https://zhuanlan.zhihu.com/p/27124535">
+                        the intuition of multi-scale processing
+                    </a>
+                    <span class="tooltiptext">
+                        Google 翻譯 → 規模處理的直覺??<br><br>
+                        Multi-scale processing → 多尺度處理 → 解決圖片上的遠近問題 → 能從不同視角去擷取特中。<br><br>
+                        我猜指的是能透過赫布理論（重複進行刺激，能加快傳輸效率，相當於直覺？），達到多尺度的處理。
+                    </span>
+                </div>
+                <a>
+                    ，特別的例子GoogLeNet為22層的網路架構，用來參加ILSVRC14。
                 </a><br><br>
-                <img src="image/inception_module.png"><br><br><hr><br><br>
-
+                <a class="example-image-link" href="image/inception_module.png" data-lightbox="example-set" data-title="">
+                    <img class="example-image" src="image/inception_module.png" alt="" style="height: auto; width: 100%;"/>
+                </a><br><br><hr><br><br>
+            </div>
+            
+            <!--Introduction-->
+            <div>
                 <h2>Introduction</h2><hr>
                 <a>
                     深度學習飛快進步，主要原因不是強大的硬體、資料集、模型，而是新的想法、
@@ -50,27 +127,128 @@
                     所以不僅是在學術探討，而是能運用在現實生活中，甚至運用在大型。
                 </a><br><br>
                 <a>
-                    這邊主要是在研究新架構inception，名稱來自於Lin的論文與迷因，deep這個詞有兩個意義，
+                    這邊主要是在研究新架構inception，名稱來自於Lin的論文與
+                </a>
+                <div class="tooltip link">
+                    <a>
+                        迷因
+                    </a>
+                    <span class="tooltiptext">
+                        we need to go deeper.
+                    </span>
+                </div>
+                <a>
+                    ，deep這個詞有兩個意義，
                     一是擁有了inception的新架構，二是運用這個架構，加深了網路的深度，而這種架構也在ILSVRC14中得到了好的成果。
                 </a><br><br><hr><br><br>
+            </div>
+            
+            <!--Related work-->
+            <h2>Related work</h2><hr>
+            <a>
+                從
+            </a>
+            <div class="link">
+                <a href="https://medium.com/@redmilk/tensorflow-筆記-5-convolution-netowrk-實作-lenet-5模型-e23d95c9265f">
+                    LeNet-5
+                </a>
+            </div>
+            <a>
+                開始，CNN開始有了
+            </a>
+            <div class="tooltip">
+                <a>
+                    標準架構
+                </a>
+                <span class="tooltiptext">
+                    把卷基層堆疊在一起，過程中可能有池化層與Batch Normalization，最後再接全連接層。
+                </span>
+            </div>
+            <a>
+                ，這種架構常被使用在圖片分類，
+                並在MNIST、CIFAR和ImageNet Classification Challenge取得好成績，
+                在更大數據的資料集，傾向於將網路層數、大小增加，並使用Dropout來防止Overfitting。
+            </a><br><br>
+            <a class="example-image-link" href="image/LeNet.png" data-lightbox="example-set" data-title="">
+                <img class="example-image" src="image/LeNet.png" alt="" style="height: auto; width: 100%;"/>
+            </a><br><br>
+            <a>
+                雖然max-pooling會遺失一些圖片資訊，但CNN還是被運用在
+            </a>
+            <div class="link">
+                <a href="https://ithelp.ithome.com.tw/m/articles/10204738">
+                    Localization
+                </a>
+            </div>
+            <a>
+                、
+            </a>
+            <div class="link">
+                <a href="https://ithelp.ithome.com.tw/m/articles/10204738">
+                    Object detection
+                </a>
+            </div>
+            <a>
+                和
+            </a>
+            <div class="link">
+                <a href="https://www.twblogs.net/a/5cd4c249bd9eee6726c97ed5">
+                    Pose estimation
+                </a>
+            </div>
+            <a>
+                。
+            </a><br><br>
+            <div style="display:inline-block;">
+                <a class="example-image-link" href="image/pose_estimation.png" data-lightbox="example-set" data-title="">
+                    <img class="example-image" src="image/pose_estimation.png" alt="" style="height: auto; width: 50%; float: left;"/>
+                </a><br><br>
+                <a class="example-image-link" href="image/localization_and_objection_detection.jpg" data-lightbox="example-set" data-title="">
+                    <img class="example-image" src="image/localization_and_objection_detection.jpg" alt="" style="height: auto; width: 50%; float: left;"/>
+                </a><br><br>
+            </div>
+            <a>
+                在“
+            </a>
+            <div class="link">
+                <a href="https://mcgovern.mit.edu/wp-content/uploads/2019/01/04069258.pdf">
+                    a neuroscience model of the primate visual cortex
+                </a>
+            </div>
+            <a>
+                ”使用不同大小的
+            </a>
+            <div class="tooltip link">
+                <a href="https://en.wikipedia.org/wiki/Gabor_filter">
+                    Gabor filters
+                </a>
+                <span class="tooltiptext">
+                    理論 → https://www.itread01.com/content/1546890854.html<br><br>
+                    OpenCV → https://makeronsite.com/opencv-python-processing-images-with-real-valued-gabor-filters.html
+                </span>
+            </div>
+            <a>
+                來處理多尺度問題，然而與上述paper的兩層不同，GoogLeNet使用Inception架構來處理
+            </a>
+            <div class="tooltip link">
+                <a href="https://blog.csdn.net/JACKSONMHLK/article/details/106442179">
+                    多尺度問題
+                </a>
+                <span class="tooltiptext">
+                    在做目標檢測的過程中，不管物件大小都需辨識，而小物體(像素本身就小、像素物件相對小)在取特徵的過程不是很友好。
+                </span>
+            </div>
+            <a>
+                。
+            </a><br><br>
+        </section>
 
-                <h2>Related work</h2><hr>
-                <a>
-                    從LeNet-5開始，CNN開始有了標準架構，這種架構常被使用在圖片分類，
-                    並在MNIST、CIFAR和ImageNet Classification Challenge取得好成績，
-                    在更大數據的資料集，傾向於將網路層數、大小增加，並使用Dropout來防止Overfitting。
-                </a><br><br>
-                <img src="image/LeNet.png"><br><br>
-                <a>
-                    雖然max-pooling會遺失一些圖片資訊，但CNN還是被運用在Localization、
-                    Object detection和Pose estimation。
-                </a><br><br>
-                <img src="image/pose_estimation.png"><br><br>
-                <img src="image/localization_and_objection_detection.jpg"><br><br>
-                <a>
-                    在“a neuroscience model of the primate visual cortex”使用不同大小的Gabor filters來處理多尺度問題，
-                    然而與上述paper的兩層不同，GoogLeNet使用Inception架構來處理多尺度問題。
-                </a><br><br>
+
+        <section class="Content">
+            <!--PAPER-->
+            <div class="Content-div2">
+                
+                
                 <a>
                     在“Network in Network”中，提出一個方法，在模型中，增加一個1x1的卷積層，能當作降為用能移除計算瓶頸，
                     還能增加網路寬度，但卻沒有明顯的效能損失。
@@ -316,5 +494,6 @@
             </div>
             <div class="Contact-div2"><br>Copyright © 2022 Thorn Lin All Rights Reserved.</div>
         </footer>
+        <script src="../../JS/lightbox-plus-jquery.js"></script>
     </body>
 </html>
