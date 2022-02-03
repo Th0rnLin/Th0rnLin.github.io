@@ -23,7 +23,11 @@
     padding-right: 10%;
 }
 .Content-div2 h2{
-    font-size: 25px;
+    font-size: 40px;
+    font-family: 'Dongle', sans-serif;
+}
+.Content-div2 a{
+    font-family: 'Noto Sans TC', sans-serif;
 }
 .Content-div2 .img1{ /*height>width*/
     display: block;
