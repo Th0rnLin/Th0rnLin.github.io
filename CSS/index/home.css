@@ -1,65 +1,23 @@
-/*--phone--*/
-@media only screen and (min-width: 0px) and (max-width: 320px) {
-    .Home h1{
-        font-size: 25px;
-        padding-left: 50px;
-    }
-    .Home a{
-        font-size: 10px;
-        margin: 5px;    
-    }
-}
-
-/*--tablet--*/
-@media only screen and (min-width: 321px) and (max-width: 768px) {
-    .Home h1{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    .Home a{
-        font-size: 20px;
-        margin: 10px;    
-    }
-}
-
-/*--desktop--*/
-@media only screen and (min-width: 769px){
-    .Home h1{
-        font-size: 50px;
-        padding-left: 50px;
-    }
-    .Home a{
-        font-size: 30px;
-        margin: 20px;    
-    }
-}
-
 /*--Home--*/
 .Home{
-    padding-top: 30vh;
+    padding-top: 20vh;
     padding-left: 5vw;
-    padding-bottom: 30vh;
-    max-width: auto;
-    max-height: auto;
+    padding-bottom: 40vh;
     height: 40vh;
-    background-position: center 0;
+    max-width: 100%;
     background-size: cover;
-    background-repeat:no-repeat;
     background-attachment: fixed;
+    background-position: center 0;
 }
-
-/*--h1--*/
 .Home h1{
+    padding-left: 7vw;
     color: white;
+    font-size: 10vmin;
     font-family: 'Comforter', cursive;
 }
-
-/*--ul--*/
 .Home ul{
     list-style: none;
 }
-
-/*--li--*/
 .Home li {
     display: inline-block;
 }
@@ -70,12 +28,13 @@
 .Home :last-child::after {
     display: none;
 }
-
-/*--a--*/
 .Home a{
     text-decoration: none;
     color: white;
     font-family: 'Dongle', sans-serif;
+    font-size: 5vmin;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 .Home a:hover{
     color: orange;

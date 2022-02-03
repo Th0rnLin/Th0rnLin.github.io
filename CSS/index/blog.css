@@ -24,15 +24,18 @@
     padding-top: 10vh;
     padding-left: 15vw;
     padding-right: 15vw;
-    padding-bottom: 20vh;
+    padding-bottom: 10vh;
     background-color: rgb(100, 140, 150);
 }
-
-/*--h1--*/
 .Blog h1{
-    font-size: 45px;
+    font-size: 50px;
     color: white;
     font-family: 'Comforter', cursive;
+}
+.Blog img{
+    max-width: 100%;
+    vertical-align:top;
+    height: auto;
 }
 
 /*--div--*/
@@ -46,12 +49,15 @@
 .Blog-div2{
     opacity: 1;
     overflow: hidden;
-    box-sizing: border-box;
     margin: 0 auto;
     break-inside: avoid;
 }
 .Blog-div2:hover{
     opacity: 0.7;
+}
+.Blog-div2:hover img{
+    transition-duration: 1s;
+    transform: scale(1.2);
 }
 
 /*--div3--*/
@@ -59,18 +65,7 @@
     position: relative;
 }
 
-/*--img--*/
-.Blog img{
-    max-width: 100%;
-    vertical-align:top;
-    height: auto;
-}
-.Blog-div2:hover img{
-    transition-duration: 1s;
-    transform: scale(1.2);
-}
-
-/*--h2--*/
+/*--div4--*/
 .Blog-div4 h2{
     max-width: 80%;
     font-family: monospace;
@@ -97,7 +92,7 @@
 }
 .Blog-div5 a{
     color: rgb(190, 190, 190);
-    font-size: 36px;
+    font-size: 40px;
     font-family: 'Dongle', sans-serif;
     text-decoration:none;
     list-style: none;

@@ -1,52 +1,25 @@
-/*--phone--*/
-@media only screen and (min-width: 0px) and (max-width: 320px) {
-    .header a{
-        font-size: 25px;
-    }
-}
-
-/*--tablet--*/
-@media only screen and (min-width: 321px) and (max-width: 768px) {
-    .header a{
-        font-size: 30px;
-    }
-}
-
-/*--desktop--*/
-@media only screen and (min-width: 769px){
-    .header a{
-        font-size: 40px;
-    }
-}
-
 /*--header--*/
 .header{
-    z-index: 100;
     position: fixed;
     width: 100%;
-    left: 0;
+    z-index: 100;
     transition-duration: 1s;
 }
 .header.active {
     background: rgb(220, 220, 220);
 }
-
-/*--ul--*/
 .header ul{
     list-style: none;
 }
-
-/*--li--*/
 .header li {
     display: inline-block;
 }
-
-/*--a--*/
 .header a{
+    font-size: 5vh;
     color: rgba(255, 255, 255, 0.750);
     text-decoration: none;
     font-family: 'Dongle', sans-serif;
-    padding-right: 10px;
+    padding-right: 1vw;
 }
 .header a:hover{
     color: white;
