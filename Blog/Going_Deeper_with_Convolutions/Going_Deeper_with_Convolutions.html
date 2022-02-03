@@ -36,7 +36,7 @@
                     優化方式基於赫布理論和the intuition of multi-scale processing，
                     特別的例子GoogLeNet為22層的網路架構，用來參加ILSVRC14。
                 </a><br><br>
-                <img class="img2", src="image/inception_module.png"><br><br><hr><br><br>
+                <img src="image/inception_module.png"><br><br><hr><br><br>
 
                 <h2>Introduction</h2><hr>
                 <a>
@@ -60,13 +60,13 @@
                     並在MNIST、CIFAR和ImageNet Classification Challenge取得好成績，
                     在更大數據的資料集，傾向於將網路層數、大小增加，並使用Dropout來防止Overfitting。
                 </a><br><br>
-                <img class="img2", src="image/LeNet.png"><br><br>
+                <img src="image/LeNet.png"><br><br>
                 <a>
                     雖然max-pooling會遺失一些圖片資訊，但CNN還是被運用在Localization、
                     Object detection和Pose estimation。
                 </a><br><br>
-                <img class="img1", src="image/pose_estimation.png"><br><br>
-                <img class="img1", src="image/localization_and_objection_detection.jpg"><br><br>
+                <img src="image/pose_estimation.png"><br><br>
+                <img src="image/localization_and_objection_detection.jpg"><br><br>
                 <a>
                     在“a neuroscience model of the primate visual cortex”使用不同大小的Gabor filters來處理多尺度問題，
                     然而與上述paper的兩層不同，GoogLeNet使用Inception架構來處理多尺度問題。
@@ -94,8 +94,8 @@
                     解決這兩個問題可以將全連接層替換成稀疏連接層，甚至卷積層也增加稀疏性。理論基礎建立在
                     “Provable bounds for learning some deep representations”上。 
                 </a><br><br>
-                <img class="img1", src="image/densely_connected_vs_sparsely_connected.png"><br><br>
-                <img class="img1", src="image/densely_connected_vs_sparsely_connected2.png"><br><br>
+                <img src="image/densely_connected_vs_sparsely_connected.png"><br><br>
+                <img src="image/densely_connected_vs_sparsely_connected2.png"><br><br>
                 <a>
                     然而，電腦對非均勻稀疏性結構運算很差，甚至將運算次數降低100倍，在lookup和caches misses佔非常大的計算資源。
                     而隨著演算法改進、數據庫的優化、CPU與GPU的升級，這種快速密集矩陣乘法，只會不斷擴大。目前大多模型，
@@ -107,7 +107,7 @@
                     根據“ON TWO-DIMENSIONAL SPARSE MATRIX PARTITIONING: MODELS, METHODS, AND A RECIPE”這篇paper表明，
                     將稀疏矩陣聚集為相對密集的子矩陣，能保持稀疏性，也能得到較好的計算能力。
                 </a><br><br>
-                <img class="img1", src="image/sparse_matrix.jpg"><br><br>
+                <img src="image/sparse_matrix.jpg"><br><br>
                 <a>
                     根據上述問題，paper提出了Inception架構，內容包括了上述的稀疏結構。
                 </a><br><br>
@@ -123,7 +123,7 @@
                     然後使用一層1x1的卷積進行聚合。為了避免patch對齊問題，inception結構的卷積核限制在1x1、3x3、5x5，
                     並加入一個池化層，平行於卷積層，有利於結果產生。如下圖。
                 </a><br><br>
-                <img class="img1", src="image/inception_naive.png"><br><br>
+                <img src="image/inception_naive.png"><br><br>
                 <a>
                     Inception結構網上堆疊，特徵相關性會越來越低，他們間的聚集程度也會縮小，
                     則3x3、5x5的卷積核應該增多，以捕捉特徵。
@@ -149,14 +149,14 @@
                     計算參數的改進，允許架構增加寬度，及深度，並不增加運算難度。
                     這版本的inception架構訓練後結果會比naive版本差一些，不過可以降低計算成本。
                 </a><br><br>
-                <img class="img1", src="image/inception_reduction.png"><br><br><hr><br><br>
+                <img src="image/inception_reduction.png"><br><br><hr><br><br>
 
                 <h2>GoogLeNet</h2><hr>
                 <a>
                     作者們使用GoogLeNet當作隊伍名稱參加ILSVRC14，並使用相同名字命名用inception建構後的網路，
                     主要是致敬Yann LeCuns的LeNet-5。GoogLeNet使用經過降維的inception架構建構，並提升了結果。
                 </a><br><br>
-                <img class="img2", src="image/GoogLeNet_hyperparameters.png"><br><br>
+                <img src="image/GoogLeNet_hyperparameters.png"><br><br>
                 <a>
                     輸入為RGB 3x224x224的圖像，inception架構中，在3x3、5x5之前，max pooling之後加入1x1的卷積，
                     並使用ReLU當作線性激活。
@@ -179,7 +179,7 @@
                     <li><a>具有128個filter的1x1的卷積，使用ReLU當作線性激活，並用於降維。</a></li>
                     <li><a>具有1024個輸出的dense層，並使用ReLU當作線性激活，並設定dropout為0.7。</a></li>
                 </ul><br><br>
-                <img class="img2", src="image/GoogLeNet.jpg"><br><br><hr><br><br>
+                <img src="image/GoogLeNet.jpg"><br><br><hr><br><br>
 
                 <h2>Training methodology</h2><hr>
                 <a>
@@ -211,13 +211,13 @@
                     反而增加覆蓋率的mean average precision 1%。使用inception架構，成功率從40%提升至43.9%。與R-CNN不同，
                     GoogLeNet並沒有使用bounding box regression。
                 </a><br><br>
-                <img class="img2", src="image/super_pixel.png"><br><br>
+                <img src="image/super_pixel.png"><br><br>
                 <a>
                     GoogLeNet的最好結果，相比2013年的mean average precision幾乎快翻一倍。最好的幾個模型，
                     都是使用convolution network。external data來自ILSVRC2012，主要是用來pre-train，並對模型進行細化。
                     有些隊伍是使用localization data，而GoogLeNet則沒有使用localization data進行預訓練。
                 </a><br><br>
-                <img class="img2", src="image/compare.png"><br><br>
+                <img src="image/compare.png"><br><br>
                 <a>
                     在signal model中，Deep Insight反而優於GoogLeNet，在mean average precision僅減少0.3個百分點，
                     而GoogLeNet明顯在ensemble中效果較好。
@@ -241,7 +241,7 @@
                 <a>
                     Ａ：inception在進行四種運算時，最後的輸入圖片大小，必須與輸出圖片大小相等，而channel部分，則是將四種運算結果串接在一起。
                 </a><br><br>
-                <img class="img2", src="image/filter_concatenation.png"><br><br>
+                <img src="image/filter_concatenation.png"><br><br>
                 <a>
                     Ｑ：1x1卷積，是如何進行降維？
                 </a><br><br>
@@ -249,7 +249,7 @@
                     Ａ：1x1卷積，在對一張channel等於1的圖，就好比對整張圖乘以一個常數。如果channel大於1時，
                     類似對圖片中的每個點進行fully connection layer的運算。channel的會隨著1x1卷積的filter進行改變，以達到減少運算量。
                 </a><br><br>
-                <img class="img2", src="image/reduction.png"><br><br>
+                <img src="image/reduction.png"><br><br>
                 <a>
                     Ｑ：為何GoogLeNet不使用一般的反向傳播？要使用輔助分類器進行參數更新。
                 </a><br><br>
