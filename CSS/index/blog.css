@@ -68,7 +68,7 @@
 /*--div4--*/
 .Blog-div4 h2{
     max-width: 80%;
-    font-family: monospace;
+    font-family: monospace, sans-serif;
     z-index: 1;
     position: absolute;
     bottom: 10%;
@@ -80,6 +80,10 @@
     color: white;
     background-color: rgba(100, 200, 250, 0.3);
     overflow: hidden;
+}
+.Blog-div4 a{
+    color: white;
+    text-decoration:none;
 }
 
 /*--div-5--*/

@@ -12,10 +12,10 @@
     color: #fff;
     border-radius: 6px;
     top: 100%;
-    left: 50%; 
-    margin-left: -20vw;
     position: absolute;
     z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
 }
   
 .tooltip:hover .tooltiptext {
