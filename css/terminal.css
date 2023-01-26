@@ -20,9 +20,6 @@
 	color: white;
 	font-size: 2vmin;
 }
-.Terminal a{
-	white-space: pre;
-}
 .Terminal .liner-guest {
 	color: rgb(65, 118, 218);
 }
