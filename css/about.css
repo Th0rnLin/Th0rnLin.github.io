@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Monaco';
+	src: url('./Monaco.ttf');
+}
+.About {
+	height: 100vh;
+	width: 100vw;
+	padding-top: 30vh;
+	padding-left: 5vw;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background-color: antiquewhite;
+	display: flex;
+}
+.About .left {
+	width: 50%;
+}
+.About .left p, a{
+	color: black;
+	font-size: 2.5vmin;
+	font-family: 'Monaco';
+}
+.About .right {
+	width: 50%;
+}
+.About .right img {
+	width: 60%;
+}

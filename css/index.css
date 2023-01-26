@@ -1,0 +1,52 @@
+@font-face {
+	font-family: 'Pixel';
+	src: url('./Pixel.ttf');
+}
+.Home {
+	height: 100vh;
+	width: 100vw;
+	padding-top: 30vh;
+	padding-left: 5vw;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background-color: antiquewhite;
+	display: flex;
+	justify-content: space-between;
+}
+.Home .left {
+	width: 50%;
+}
+.Home .left h1 {
+	padding-left: 7vw;
+	color: black;
+	font-size: 6vmin;
+	font-family: 'Pixel';
+	white-space: pre-line;
+}
+.Home .left .top {
+	height: 50%;
+}
+.Home .left .down {
+	height: 50%;
+}
+.Home .right {
+	width: 50%;
+}
+.Home .right img {
+	width: 60%;
+}
+.Home li {
+	display: inline-block;
+}
+.Home a {
+	text-decoration: none;
+	color: black;
+	font-family: 'Pixel';
+	font-size: 5vmin;
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+.Home a:hover {
+	color: orange;
+}
