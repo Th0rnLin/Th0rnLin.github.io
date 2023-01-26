@@ -2,6 +2,10 @@
 	font-family: 'Monaco';
 	src: url('./Monaco.ttf');
 }
+body {
+	margin: 0px;
+	padding: 0px;
+}
 .Terminal {
 	height: 94vh;
 	width: 94vw;
@@ -12,7 +16,6 @@
 	padding-top: 3vh;
 	padding-bottom: 3vh;
 	margin: 0;
-	position: fixed;
 	background-color: rgb(38, 38, 38);
 	overflow-y: scroll;
 	white-space: nowrap;

@@ -22,7 +22,6 @@ function response(inp) {
 		'e': '2.718281828459045...',
 		'infinitas': 'NO COMMENT......',
 	};
-
 	if (inp.toLowerCase() == 'help') {
 		return '<a style="white-space:pre">notice   -> Display some cool fonts and some FUCKING words. Just like the header.</a><br>\
 				<a style="white-space:pre">about    -> Tell you about me.</a><br>\
@@ -33,7 +32,7 @@ function response(inp) {
                 <a style="white-space:pre">e        -> ERROR 404</a><br>\
                 <a style="white-space:pre">infinitas-> NO COMMENT......0.0</a><br>\
 				<a style="white-space:pre">clear    -> CLEAR ALL</a>';
-	}  else if (dict[inp.toLowerCase()] === undefined) {
+	} else if (dict[inp.toLowerCase()] === undefined) {
 		return 'Want to know more commands, type "<a style="color: red">HELP</a>" or open "<a style="color: red" href="./document.html">DOCUMENT</a>".';
 	} else {
 		return dict[inp.toLowerCase()];
@@ -51,14 +50,14 @@ function terminal() {
 
 	function pressEnter(event) {
 		if (event.keyCode == 13) {
-			if(command.value.toLowerCase() == 'clear') {
+			if (command.value.toLowerCase() == 'clear') {
 				history.innerHTML = '';
 			} else if (command.value.toLowerCase() == 'about') {
 				window.open('./about.html', '_blank').location;
 				history.innerHTML = history.innerHTML + '<a class="liner-guest">guest</a><a class="liner-sign">@</a><a class="liner-URL">Th0rnLin.github.io</a><a class="liner-sign">: ~ %</a> ' + command.value + '<br>';
 			} else {
 				history.innerHTML = history.innerHTML + '<a class="liner-guest">guest</a><a class="liner-sign">@</a><a class="liner-URL">Th0rnLin.github.io</a><a class="liner-sign">: ~ %</a> ' + command.value + '<br>';
-				history.innerHTML = history.innerHTML + response(command.value) + '<br>' + '<br>';	
+				history.innerHTML = history.innerHTML + response(command.value) + '<br>' + '<br>';
 			}
 			command.value = '';
 			scroll2Bottom();
